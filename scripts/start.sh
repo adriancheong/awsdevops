@@ -1,1 +1,2 @@
+whoami
 dotnet awsdevops.dll
