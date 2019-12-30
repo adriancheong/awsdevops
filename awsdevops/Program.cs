@@ -20,7 +20,10 @@ namespace awsdevops
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseKestrel(options => {
+                        options.Listen(System.Net.IPAddress.Any, 5000);
+                    })
+                    .UseStartup<Startup>();
                 });
     }
 }
