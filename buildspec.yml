@@ -13,10 +13,6 @@ phases:
       - dotnet publish -c release -o ./buildoutput
 artifacts:
   files:
+    - buildoutput/**/*
     - scripts/**/*
     - appspec.yml
-  secondary-artifacts:
-    artifact1:
-      base-directory: 'buildoutput'
-      files:
-        - **/*
