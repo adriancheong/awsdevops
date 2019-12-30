@@ -13,6 +13,6 @@ phases:
       - dotnet publish -c release -o ./buildoutput
 artifacts:
   files:
-    - buildoutput/*
+    - buildoutput/**/*
     - scripts/**/*
     - appspec.yml
