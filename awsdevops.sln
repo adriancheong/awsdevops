@@ -8,7 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09014D4E-B7AB-4A44-9F68-003FDBBE949F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		appspec.yml = appspec.yml
 		buildspec.yml = buildspec.yml
+		scripts\start.sh = scripts\start.sh
 	EndProjectSection
 EndProject
 Global
