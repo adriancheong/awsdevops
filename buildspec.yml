@@ -5,10 +5,15 @@ phases:
       dotnet: 3.0
   pre_build:
     commands:
+      - echo Restore started on `date`
       - dotnet restore
   build:
     commands:
-      - dotnet publish -c release
+      - echo Build started on `date`
+      - dotnet publish -c release -o ./buildoutput
 artifacts:
   files:
     - '**/*'
+    - ../scripts/**/*
+    - ../appspec.yml
+  base-directory: buildoutput
