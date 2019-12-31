@@ -11,13 +11,9 @@ phases:
     commands:
       - echo Build started on `date`
       - dotnet publish -c release -o ./buildoutput
+      - cp -rf scripts buildoutput/scripts
+      - cp appspec.yml buildoutput/appspec.yml
 artifacts:
   files:
-    - scripts/**/*
-    - appspec.yml
-  secondary-artifacts:
-    secondary:
-      files:
-        - '**/*'
-      name: secondary
-      base-directory: buildoutput
+    - '**/*'
+  base-directory: buildoutput
