@@ -8,7 +8,7 @@ phases:
       - dotnet restore
   build:
     commands:
-      - dotnet publish -c release -o ./buildoutput
+      - dotnet publish -c release
 artifacts:
   files:
-    - **/*  
+    - **/*
