@@ -1,3 +1,4 @@
+echo start
 whoami
 pwd
 echo $DOTNET_CLI_HOME
