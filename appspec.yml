@@ -1,9 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: **/*
     destination: /
   
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: scripts/start.sh
