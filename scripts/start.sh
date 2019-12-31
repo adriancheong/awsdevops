@@ -2,4 +2,4 @@ whoami
 echo $DOTNET_CLI_HOME
 export DOTNET_CLI_HOME=/tmp
 echo $DOTNET_CLI_HOME
-dotnet buildoutput/awsdevops.dll
+dotnet awsdevops.dll
