@@ -4,4 +4,4 @@ pwd
 echo $DOTNET_CLI_HOME
 export DOTNET_CLI_HOME=/tmp
 echo $DOTNET_CLI_HOME
-dotnet awsdevops.dll &
+nohup dotnet awsdevops.dll > console.log &
