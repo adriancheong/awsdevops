@@ -5,5 +5,7 @@ files:
     destination: /
   
 hooks:
+  BeforeInstall:
+    - location: scripts/stop.sh
   AfterInstall:
     - location: scripts/start.sh
