@@ -1,1 +1,1 @@
-kill $(ps aux | grep 'awsdevops.dll' | awk '{print $2}')
+if pgrep dotnet; then pkill dotnet; fi
