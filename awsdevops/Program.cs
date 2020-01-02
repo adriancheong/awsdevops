@@ -21,7 +21,7 @@ namespace awsdevops
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseKestrel(options => {
-                        options.Listen(System.Net.IPAddress.Any, 5000);
+                        options.Listen(System.Net.IPAddress.Any, 80);
                     })
                     .UseStartup<Startup>();
                 });

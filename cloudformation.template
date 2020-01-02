@@ -22,6 +22,7 @@
         "ImageId": "ami-0893ed42e2d5a6aa1",
         "InstanceType": "t2.micro",
         "IamInstanceProfile": "EC2InstanceRoleForCodeDeploy",
+        "SecurityGroupIds": [ "sg-0585f45953b7c8d08" ],
         "Tags": [
           {
             "Key": "env",
@@ -57,6 +58,7 @@
         "ImageId": "ami-0893ed42e2d5a6aa1",
         "InstanceType": "t2.micro",
         "IamInstanceProfile": "EC2InstanceRoleForCodeDeploy",
+        "SecurityGroupIds": [ "sg-0585f45953b7c8d08" ],
         "Tags": [
           {
             "Key": "env",
