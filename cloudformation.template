@@ -21,40 +21,7 @@
       "Properties": {
         "ImageId": "ami-0893ed42e2d5a6aa1",
         "InstanceType": "t2.micro",
-        "Tags": [
-          {
-            "Key": "env",
-            "Value": "dev"
-          }
-        ],
-        "UserData": {
-          "Fn::Base64": {
-            "Fn::Join": [
-              "",
-              [
-                "#!/bin/bash\n",
-                "yum -y update\n",
-                "yum install -y ruby\n",
-                "cd /home/ec2-user\n",
-                "curl -O https://aws-codedeploy-ap-southeast-1.s3.amazonaws.com/latest/install\n",
-                "chmod +x ./install\n",
-                "./install auto\n"
-              ]
-            ]
-          }
-        }
-      },
-      "Metadata": {
-        "AWS::CloudFormation::Designer": {
-          "id": "da72ebb3-b037-47aa-bce9-ba0654dd40cd"
-        }
-      }
-    },
-    "Web2": {
-      "Type": "AWS::EC2::Instance",
-      "Properties": {
-        "ImageId": "ami-0893ed42e2d5a6aa1",
-        "InstanceType": "t2.micro",
+        "IamInstanceProfile": "EC2InstanceRoleForCodeDeploy",
         "Tags": [
           {
             "Key": "env",
