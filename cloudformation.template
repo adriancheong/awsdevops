@@ -16,23 +16,6 @@
         }
     },
   "Resources": {
-    "RootRole": {
-      "Type": "AWS::IAM::Role",
-      "Properties": {
-        "ManagedPolicyArns": [ "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforAWSCodeDeploy" ]
-      }
-    },
-    "RootInstanceProfile": {
-      "Type": "AWS::IAM::InstanceProfile",
-      "Properties": {
-        "Path": "/",
-        "Roles": [
-          {
-            "Ref": "RootRole"
-          }
-        ]
-      }
-    },
     "Web": {
       "Type": "AWS::EC2::Instance",
       "Properties": {
