@@ -30,7 +30,8 @@
               "Action": [ "sts:AssumeRole" ]
             }
           ]
-        }
+        },
+        "ManagedPolicyArns": [ "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforAWSCodeDeploy" ]
       }
     },
     "RootInstanceProfile": {
