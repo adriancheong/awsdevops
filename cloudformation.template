@@ -22,7 +22,7 @@
         "ImageId": "ami-0893ed42e2d5a6aa1",
         "InstanceType": "t2.micro",
         "IamInstanceProfile": "EC2InstanceRoleForCodeDeploy",
-        "SecurityGroupIds": [ "sg-01f3b2813dbbe54b0" ],
+        "SecurityGroupIds": [ "sg-0178eb766527f5a92" ],
         "Tags": [
           {
             "Key": "env",
